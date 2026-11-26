@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeri kelas, Sevsix 7.6</title>
+    <meta
+      name="description"
+      content="Semua foto kegiatan kelas VII.6 SMP Negeri 25 Depok. Bisa diunduh dengan resolusi asli."
+    />
+    <meta name="theme-color" content="#0B1A33" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/logo-sekolah.png" />
+  </head>
+  <body class="page-gallery">
+    <a class="skip-link" href="#isi">Lompat ke isi</a>
+
+    <div class="notice">
+      <div class="shell notice__inner">
+        <span class="notice__tag">Arsip kelas</span>
+        <p class="notice__text">
+          <span class="notice__keep">Website kelas VII.6, <strong>bagian dari SMP Negeri 25 Depok.</strong></span>
+          <span class="notice__more">
+            Informasi resmi sekolah ada di
+            <a href="https://smpnegeri25depok.sch.id/" target="_blank" rel="noopener noreferrer">smpnegeri25depok.sch.id</a>.</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="/">
+          <img
+            class="brand-logo"
+            src="/logo-sekolah.png"
+            alt="Lambang SMP Negeri 25 Depok"
+            width="38"
+            height="38"
+          />
+          <span class="brand-text">
+            <strong>Sevsix</strong>
+            <em>Kelas 7.6</em>
+          </span>
+        </a>
+        <a class="btn btn--sm header-cta" href="/">Kembali ke beranda</a>
+      </div>
+    </header>
+
+    <main class="shell gallery-main" id="isi">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Galeri kelas</p>
+      <div class="section-head section-head--row gallery-head">
+        <div>
+          <h1 class="h2">Semua foto <em>kelas VII.6.</em></h1>
+          <p class="section-head__note">Klik foto untuk melihat lebih besar, lalu unduh dengan resolusi aslinya.</p>
+          <p class="gallery-count" id="gpCount">Memuat galeri</p>
+        </div>
+        <a class="btn btn-primary" id="gpZip" href="/api/gallery/zip" hidden>Unduh semua sebagai ZIP</a>
+      </div>
+
+      <div class="plates" id="gpGrid"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer__top">
+        <a class="brand brand--footer" href="/">
+          <img class="brand-logo" src="/logo-sekolah.png" alt="" width="36" height="36" loading="lazy" />
+          <span class="brand-text">
+            <strong>Sevsix</strong>
+            <em>Kelas 7.6</em>
+          </span>
+        </a>
+
+        <nav class="footer__nav" aria-label="Tautan footer">
+          <a href="/">Beranda</a>
+          <a href="/#struktur">Struktur</a>
+          <a href="/#jadwal">Jadwal</a>
+          <a href="/#link">Tautan</a>
+        </nav>
+
+        <a class="link-arrow" href="https://smpnegeri25depok.sch.id/" target="_blank" rel="noopener noreferrer">
+          Website resmi sekolah
+          <svg viewBox="0 0 24 12" fill="none" aria-hidden="true">
+            <path d="M0 6h22M17 1l5 5-5 5" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="shell footer__bottom">
+        <p>Foto diunggah oleh pengurus kelas lewat panel admin.</p>
+        <p>© <span id="gpYear"></span> Sevsix, SMP Negeri 25 Depok</p>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" type="button" data-lb-close aria-label="Tutup pratinjau">×</button>
+      <button class="lightbox-nav prev" type="button" data-lb-prev aria-label="Foto sebelumnya">‹</button>
+      <button class="lightbox-nav next" type="button" data-lb-next aria-label="Foto berikutnya">›</button>
+      <figure>
+        <img id="lbImg" alt="" />
+        <figcaption id="lbCaption"></figcaption>
+        <div class="lightbox-actions">
+          <a class="btn btn-line btn-sm" id="lbDownload" href="#" hidden>Unduh foto</a>
+          <span class="lightbox-counter" id="lbCounter"></span>
+        </div>
+      </figure>
+    </div>
+
+    <script src="/galeri.js" defer></script>
+  </body>
+</html>
